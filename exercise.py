@@ -17,7 +17,7 @@ def print_greeting():
         print("Python is fun!")
 
 # Call the function
-# print_greeting()
+print_greeting()
 
 
 # Exercise 1: Vowel or Consonant
@@ -53,7 +53,7 @@ def check_letter():
 
 
 # Call the function
-# check_letter()
+check_letter()
 
 # Exercise 2: Old enough to vote?
 #
@@ -89,7 +89,7 @@ def check_voting_eligibility():
 
 
 # Call the function
-# check_voting_eligibility()
+check_voting_eligibility()
 
 # Exercise 3: Calculate Dog Years
 #
@@ -128,7 +128,7 @@ def calculate_dog_years():
 
     print(f"The dog's age in dog years is {dog_age}.")
 # Call the function
-# calculate_dog_years()
+calculate_dog_years()
 
 # Exercise 4: Weather Advice
 #
@@ -163,7 +163,7 @@ def weather_advice():
         print("Please answer with yes or no")
 
 # Call the function
-# weather_advice()
+weather_advice()
 
 # Exercise 5: What's the Season?
 #
@@ -220,7 +220,7 @@ def determine_season():
     print(f'{month} {day} is in {season}.')
             
 # Call the function
-# determine_season()
+determine_season()
 
 # Exercise 7: Number Guessing Game
 #
