@@ -17,7 +17,7 @@ def print_greeting():
         print("Python is fun!")
 
 # Call the function
-print_greeting()
+# print_greeting()
 
 
 # Exercise 1: Vowel or Consonant
@@ -53,7 +53,7 @@ def check_letter():
 
 
 # Call the function
-check_letter()
+# check_letter()
 
 # Exercise 2: Old enough to vote?
 #
@@ -89,7 +89,7 @@ def check_voting_eligibility():
 
 
 # Call the function
-check_voting_eligibility()
+# check_voting_eligibility()
 
 # Exercise 3: Calculate Dog Years
 #
@@ -128,7 +128,7 @@ def calculate_dog_years():
 
     print(f"The dog's age in dog years is {dog_age}.")
 # Call the function
-calculate_dog_years()
+# calculate_dog_years()
 
 # Exercise 4: Weather Advice
 #
@@ -163,7 +163,7 @@ def weather_advice():
         print("Please answer with yes or no")
 
 # Call the function
-weather_advice()
+# weather_advice()
 
 # Exercise 5: What's the Season?
 #
@@ -220,4 +220,48 @@ def determine_season():
     print(f'{month} {day} is in {season}.')
             
 # Call the function
-determine_season()
+# determine_season()
+
+# Exercise 7: Number Guessing Game
+#
+# Write a Python function named `guess_number` that allows a user to guess a predetermined number within a range.
+#
+# Requirements:
+# - Set a fixed number as the target for guessing (e.g., 42).
+# - Prompt the user to guess a number within a range (e.g., 1 to 100).
+# - Allow the user to guess up to five times.
+# - After each guess, use conditional statements with AND, OR, and NOT to give the user hints like:
+#   - "Guess is too low" or "Guess is too high."
+#   - "Last chance!" when they are on their fifth guess.
+# - Print "Congratulations, you guessed correctly!" if they guess the number.
+# - Print "Sorry, you failed to guess the number in five attempts." if they do not succeed.
+#
+# Hints:
+# - Use a for loop with a range to limit guesses to five.
+# - Use logical AND, OR, and NOT to check conditions and provide appropriate feedback.
+
+def guess_number():
+
+    fixed_number = 42
+    guess_number = input("Guess a number within a range(e.g, 1 to 100): ")
+    guess_number = int(guess_number)
+    user_tries = 1
+
+    while user_tries < 5:
+        if guess_number == fixed_number:
+            print("Congratulations, you guessed correctly!")
+            return
+        elif guess_number < fixed_number:
+            print("Guess is too low")
+        else:
+            print("Guess is too high")
+        user_tries += 1
+        if user_tries == 5:
+            print("Last chance!")
+        guess_number = int(input("Guess again: "))
+    
+    print("Sorry, you failed to guess the number in five attempts.")
+
+
+# Call the function
+guess_number()
